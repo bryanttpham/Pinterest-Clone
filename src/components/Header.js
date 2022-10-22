@@ -2,8 +2,11 @@ import React from 'react'
 import PinterestIcon from '@mui/icons-material/Pinterest';
 import styled from "styled-components"
 import IconButton from '@mui/material/IconButton';
-
-
+import SearchIcon from '@mui/icons-material/Search';
+import NotificationsActiveIcon from '@mui/icons-material/NotificationsActive';
+import MessageIcon from '@mui/icons-material/Message';
+import FaceIcon from '@mui/icons-material/Face';
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 function Header() {
   return (
         <Wrapper>
@@ -30,6 +33,20 @@ function Header() {
                     </form>
                 </SearchBarWrapper>
             </SearchWrapper>
+            <IconWrapper>
+                <IconButton>
+                    <NotificationsActiveIcon/>
+                </IconButton>
+                <IconButton>
+                    <MessageIcon/>
+                </IconButton>
+                <IconButton>
+                    <FaceIcon/>
+                </IconButton>
+                <IconButton>
+                    <KeyboardArrowDownIcon/>
+                </IconButton>
+            </IconWrapper>
         </Wrapper>   
 
     )
@@ -89,5 +106,43 @@ const FollowingButton = styled(HomeButtons)`
     :hover{
         background-color:#e1e1e1
     }
+`
+const SearchWrapper = styled.div`
+    flex:1;
+`
+
+const SearchBarWrapper = styled.div`
+    background-color:#efefef;
+    display:flex;
+    height:48px;
+    width:100%;
+    border-radius:50px;
+    border:none;
+    padding-left:10px;
+
+    form{
+        display:flex;
+        flex:1;
+    }
+
+    form>input{
+        background-color:transparent;
+        border:none;
+        width:100%;
+        margin-left:5px;
+        font-size:16px;
+    }
+
+    form>button{
+        display:none;
+    }
+
+
+`
+const IconWrapper = styled.div`
+display:flex;
+padding-left:20px;
+padding-right:5px;
+
 `
 
