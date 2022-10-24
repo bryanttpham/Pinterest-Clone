@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import PinterestIcon from '@mui/icons-material/Pinterest';
 import styled from "styled-components"
 import IconButton from '@mui/material/IconButton';
@@ -7,7 +7,14 @@ import NotificationsActiveIcon from '@mui/icons-material/NotificationsActive';
 import MessageIcon from '@mui/icons-material/Message';
 import FaceIcon from '@mui/icons-material/Face';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
-function Header() {
+
+function Header(props) {
+const [input,setInput] = useState("");
+const onSearchSubmit = (e)=>
+{
+    e.preventDefault();
+    props.onSubmit(input)
+}
   return (
         <Wrapper>
             <LogoWrapper>
@@ -28,8 +35,8 @@ function Header() {
                         <SearchIcon/>
                     </IconButton>
                     <form>
-                        <input type="test"/>
-                        <button type="submit"> </button>
+                        <input type="test" onChange={(e) => setInput(e.target.value)} />
+                        <button type="submit" onClick={onSearchSubmit} />
                     </form>
                 </SearchBarWrapper>
             </SearchWrapper>
