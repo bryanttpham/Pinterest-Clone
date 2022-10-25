@@ -1,5 +1,5 @@
 # Description
-I started this project to work on building front-end application using React.js.
+I started this project to work on building front-end applications using React.js.
 # Areas of focus:
 
 Styled Components
