@@ -1,7 +1,7 @@
 # Description
 This was a project that I started to practice building a front-end application using react.
 
-##Areas of focus:
+## Areas of focus:
 Styled Components
 Handling multiple API calls
 Creating media queries to introduce responsiveness
