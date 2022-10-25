@@ -1,4 +1,4 @@
-#Description
+# Description
 This was a project that I started to practice building a front-end application using react.
 
 ##Areas of focus:
