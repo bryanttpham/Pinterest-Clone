@@ -2,11 +2,11 @@
 I started this project to work on building front-end applications using React.js.
 # Areas of focus:
 
-Styled Components
+1. Styled Components
 
-Handling multiple API calls
+2. Handling multiple API calls
 
-Creating media queries to introduce responsiveness
+3. Creating media queries to introduce responsiveness
 
 ## Available Scripts
 
