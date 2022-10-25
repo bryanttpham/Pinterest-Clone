@@ -6,7 +6,7 @@ Styled Components
 Handling multiple API calls
 Creating media queries to introduce responsiveness
 
-# Available Scripts
+### Available Scripts
 
 In the project directory, you can run:
 
